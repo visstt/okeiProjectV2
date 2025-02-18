@@ -1,4 +1,5 @@
 .wrapper {
+  max-width: 1440px;
   margin: 30px;
   display: flex;
   flex-direction: row;
@@ -21,7 +22,7 @@
   justify-content: space-between;
 }
 .nav {
-  width: 840px;
+  width: 75%;
 }
 .nav ul {
   color: #fff;
@@ -65,4 +66,13 @@
 .button:hover {
   background-color: #7f17af;
   scale: 0.97;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    gap: 5%;
+  }
+  .header_nav_container {
+    gap: 10%;
+  }
 }
