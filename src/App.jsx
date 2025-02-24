@@ -1,12 +1,9 @@
-import Header from "./Global/Header/Header";
 import HomeLayout from "./Pages/Home/HomeLayout";
-import styles from "./App.module.css";
-
+import "./App.css";
 function App() {
   return (
-    <div className={styles.container}>
-      <Header />
-      {/* <HomeLayout /> */}
+    <div>
+      <HomeLayout />
     </div>
   );
 }

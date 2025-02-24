@@ -1,0 +1,41 @@
+.homeTitle_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper__title h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.wrapper__title {
+  margin-top: 200px;
+  max-width: 585px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.button {
+  width: 245px;
+  height: 70px;
+  color: #fff;
+  background-color: #a417e5;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #7f17af;
+  scale: 1.03;
+}
