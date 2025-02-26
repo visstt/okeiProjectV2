@@ -7,11 +7,10 @@ export default function Header() {
   return (
     <motion.div
       className={styles.wrapper}
-      initial={{ opacity: 0, y: -50 }} // Хедер скрыт сверху
-      animate={{ opacity: 1, y: 0 }} // Плавное появление вниз
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      {/* Логотип */}
       <motion.div
         className={styles.logo}
         initial={{ opacity: 0, x: -50 }}
@@ -21,7 +20,6 @@ export default function Header() {
         <img src={logoOKEI} alt="logoOKEI" />
       </motion.div>
 
-      {/* Навигация */}
       <motion.div
         className={styles.header_nav_container}
         initial={{ opacity: 0, y: -20 }}
@@ -61,7 +59,6 @@ export default function Header() {
           </ul>
         </div>
 
-        {/* Кнопка */}
         <motion.button
           className={styles.button}
           initial={{ opacity: 0, scale: 0.8 }}

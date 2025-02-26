@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./HomeTitle.module.css";
+import Header from "../../../../Global/Header/Header";
 
 export default function HomeTitle() {
   const blocks = [
@@ -11,58 +12,59 @@ export default function HomeTitle() {
   ];
 
   return (
-    <motion.div className={styles.homeTitle_wrapper}>
-      {/* Анимированный фон */}
-      <motion.div
-        className={styles.animatedBackground}
-        initial={{ clipPath: "inset(100% 0 0 0)" }} // Фон полностью скрыт
-        animate={{ clipPath: "inset(0% 0 0 0)" }} // Фон появляется полностью
-        transition={{
-          duration: 1.5,
-          ease: "easeOut",
-          delay: blocks.length * 0.5 + 0.5, // Фон появляется после последнего блока
-        }}
-      />
+    <div className="gridLines">
+      <Header />
 
-      {/* Заголовок и кнопка */}
-      <motion.div
-        className={styles.wrapper__title}
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 1,
-          ease: "easeOut",
-        }}
-      >
-        <h1>Здесь студенты творят кейсы от компаний</h1>
-        <motion.button
-          className={styles.button}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+      <motion.div className={styles.homeTitle_wrapper}>
+        <motion.div
+          className={styles.animatedBackground}
+          initial={{ clipPath: "inset(100% 0 0 0)" }}
+          animate={{ clipPath: "inset(0% 0 0 0)" }}
+          transition={{
+            duration: 1.5,
+            ease: "easeOut",
+            delay: blocks.length * 0.5 + 0.5,
+          }}
+        />
+
+        <motion.div
+          className={styles.wrapper__title}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+          }}
         >
-          Заказать
-        </motion.button>
-      </motion.div>
-
-      {/* Блоки, появляющиеся после текста */}
-      <div className={styles.blocks_container}>
-        {blocks.map((block, index) => (
-          <motion.div
-            key={block.id}
-            className={styles[`block${block.id}`]}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-              delay: 1 + index * 0.5, // Блоки появляются после заголовка и кнопки
-            }}
+          <h1>Здесь студенты творят кейсы от компаний</h1>
+          <motion.button
+            className={styles.button}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            <h2>{block.number}</h2>
-            <p>{block.text}</p>
-          </motion.div>
-        ))}
-      </div>
-    </motion.div>
+            Заказать
+          </motion.button>
+        </motion.div>
+
+        <div className={styles.blocks_container}>
+          {blocks.map((block, index) => (
+            <motion.div
+              key={block.id}
+              className={styles[`block${block.id}`]}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: 1 + index * 0.5,
+              }}
+            >
+              <h2>{block.number}</h2>
+              <p>{block.text}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
   );
 }
