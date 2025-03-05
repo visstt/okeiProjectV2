@@ -6,6 +6,11 @@ import gradientStripe from "../../../../../public/gradientStripe.svg";
 export default function HomeDescription() {
   return (
     <div className={styles.gradient}>
+      {/* <img
+        src={gradientStripe}
+        alt="gradientStripe"
+        className={styles.gradient}
+      /> */}
       <div className={styles.desc_wrapper}>
         <div className={styles.wrapper__title}>
           <h2>Наша команда готова к любым задачам</h2>

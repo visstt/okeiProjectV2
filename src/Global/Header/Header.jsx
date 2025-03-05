@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Header.module.css";
 import logoOKEI from "../../../public/logoOKEI.svg";
+import purpleStripe from "../../../public/purpleStripe.svg";
 
 export default function Header() {
   return (
@@ -33,28 +34,35 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Работы
+              Руководители
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              <img src={purpleStripe} alt="purpleStripe" />
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Руководители
+              Направления
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Категории
+              <img src={purpleStripe} alt="purpleStripe" />
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
-              Заявка
+              Работы
             </motion.li>
           </ul>
         </div>

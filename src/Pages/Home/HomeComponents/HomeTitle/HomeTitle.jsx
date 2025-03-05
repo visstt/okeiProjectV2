@@ -5,7 +5,7 @@ import Header from "../../../../Global/Header/Header";
 
 export default function HomeTitle() {
   const blocks = [
-    { id: 1, number: "20+", text: "направлений заказов" },
+    { id: 1, number: "20+", text: "направлений деятельности" },
     { id: 2, number: "350+", text: "выполненных кейсов" },
     { id: 3, number: "15+", text: "опытных руководителей" },
     { id: 4, number: "100+", text: "довольных клиентов" },
@@ -26,7 +26,6 @@ export default function HomeTitle() {
             delay: blocks.length * 0.5 + 0.5,
           }}
         />
-
         <motion.div
           className={styles.wrapper__title}
           initial={{ opacity: 0, y: 50 }}
@@ -36,7 +35,7 @@ export default function HomeTitle() {
             ease: "easeOut",
           }}
         >
-          <h1>Здесь студенты творят кейсы от компаний</h1>
+          <h1>Креатив для вашей компании здесь</h1>
           <motion.button
             className={styles.button}
             whileHover={{ scale: 1.05 }}
@@ -45,7 +44,6 @@ export default function HomeTitle() {
             Заказать
           </motion.button>
         </motion.div>
-
         <div className={styles.blocks_container}>
           {blocks.map((block, index) => (
             <motion.div
