@@ -1,5 +1,5 @@
 .homeTitle_wrapper {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,13 @@
   background-size: cover;
   height: 800px;
   position: relative;
+}
+.hero {
+  position: absolute;
+  width: 563;
+  height: 454;
+  top: 341px;
+  left: 500px;
 }
 .wrapper__title h1 {
   color: #fff;
@@ -20,7 +27,7 @@
 }
 .wrapper__title {
   margin-top: 100px;
-  max-width: 585px;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +71,7 @@
 
   position: absolute;
   top: 150px;
-  left: 166px;
+  left: 130px;
 }
 .block1 h2 {
   font-family: Montserrat;

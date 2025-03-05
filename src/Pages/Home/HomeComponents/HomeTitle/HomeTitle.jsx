@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./HomeTitle.module.css";
 import Header from "../../../../Global/Header/Header";
+import hero from "../../../../../public/hero.png";
 
 export default function HomeTitle() {
   const blocks = [
@@ -26,6 +27,7 @@ export default function HomeTitle() {
             delay: blocks.length * 0.5 + 0.5,
           }}
         />
+        <img src={hero} alt="hero" className={styles.hero} />
         <motion.div
           className={styles.wrapper__title}
           initial={{ opacity: 0, y: 50 }}
@@ -35,7 +37,7 @@ export default function HomeTitle() {
             ease: "easeOut",
           }}
         >
-          <h1>Креатив для вашей компании здесь</h1>
+          <h1>Креатив и IT для вашей компаний здесь</h1>
           <motion.button
             className={styles.button}
             whileHover={{ scale: 1.05 }}
