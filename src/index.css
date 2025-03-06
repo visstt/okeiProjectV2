@@ -8,6 +8,7 @@
 }
 body {
   background-color: #11091e;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 8px;

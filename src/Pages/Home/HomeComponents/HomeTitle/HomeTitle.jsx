@@ -37,7 +37,10 @@ export default function HomeTitle() {
             ease: "easeOut",
           }}
         >
-          <h1>Креатив и IT для вашей компаний здесь</h1>
+          <h1>
+            Здесь программирование сочетается с творчеством для создания
+            уникальных решений
+          </h1>
           <motion.button
             className={styles.button}
             whileHover={{ scale: 1.05 }}
