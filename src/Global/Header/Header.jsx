@@ -48,7 +48,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Направления
+              Работы
             </motion.li>
             <motion.li
               initial={{ opacity: 0, y: -10 }}
@@ -62,7 +62,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
-              Работы
+              Направления
             </motion.li>
           </ul>
         </div>
