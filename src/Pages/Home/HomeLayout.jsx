@@ -3,6 +3,8 @@ import styles from "./HomeLayout.module.css";
 import HomeTitle from "./HomeComponents/HomeTitle/HomeTitle";
 import HomeDescription from "./HomeComponents/HomeDescription/HomeDescription";
 import HomeDirections from "./HomeDirections/HomeDirections";
+import HomeCards from "./HomeCards/HomeCards";
+import HomeForm from "../Home/HomeForm/HomeForm";
 
 export default function HomeLayout() {
   return (
@@ -10,7 +12,11 @@ export default function HomeLayout() {
       <div className="container">
         <HomeTitle />
         <HomeDescription />
-        <HomeDirections />
+        <div className="gridLines">
+          <HomeDirections />
+          <HomeCards />
+          <HomeForm />
+        </div>
       </div>
     </div>
   );
