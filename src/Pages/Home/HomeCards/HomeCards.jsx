@@ -1,3 +1,4 @@
+// HomeCards.jsx
 import React from "react";
 import styles from "./HomeCards.module.css";
 import cardImage from "../../../../public/cardImage.png";
@@ -15,6 +16,13 @@ export default function HomeCards() {
             <div className={styles.card}>
               <div className={styles.card_img}>
                 <img src={cardImage} alt="cardImage" />
+                <div className={styles.card_overlay}>
+                  <div className={styles.overlay_content}>
+                    <div className={styles.avatar}></div>
+                    <h4>Иван Иванов</h4>
+                    <p>Сайт для увековечивания памяти о героях</p>
+                  </div>
+                </div>
               </div>
               <div className={styles.card_text}>
                 <div className={styles.card_text__desc}>
@@ -25,10 +33,16 @@ export default function HomeCards() {
                 </div>
               </div>
             </div>
-            {/* */}
             <div className={styles.card}>
               <div className={styles.card_img}>
                 <img src={cardImage} alt="cardImage" />
+                <div className={styles.card_overlay}>
+                  <div className={styles.overlay_content}>
+                    <div className={styles.avatar}></div>
+                    <h4>Петр Петров</h4>
+                    <p>Сайт для увековечивания памяти о героях</p>
+                  </div>
+                </div>
               </div>
               <div className={styles.card_text}>
                 <div className={styles.card_text__desc}>
@@ -39,10 +53,16 @@ export default function HomeCards() {
                 </div>
               </div>
             </div>
-            {/* */}
             <div className={styles.card}>
               <div className={styles.card_img}>
                 <img src={cardImage} alt="cardImage" />
+                <div className={styles.card_overlay}>
+                  <div className={styles.overlay_content}>
+                    <div className={styles.avatar}></div>
+                    <h4>Алексей Сидоров</h4>
+                    <p>Сайт для увековечивания памяти о героях</p>
+                  </div>
+                </div>
               </div>
               <div className={styles.card_text}>
                 <div className={styles.card_text__desc}>
@@ -53,10 +73,16 @@ export default function HomeCards() {
                 </div>
               </div>
             </div>
-            {/* */}
             <div className={styles.card}>
               <div className={styles.card_img}>
                 <img src={cardImage} alt="cardImage" />
+                <div className={styles.card_overlay}>
+                  <div className={styles.overlay_content}>
+                    <div className={styles.avatar}></div>
+                    <h4>Мария Кузнецова</h4>
+                    <p>Сайт для увековечивания памяти о героях</p>
+                  </div>
+                </div>
               </div>
               <div className={styles.card_text}>
                 <div className={styles.card_text__desc}>
@@ -67,10 +93,16 @@ export default function HomeCards() {
                 </div>
               </div>
             </div>
-            {/* */}
             <div className={styles.card}>
               <div className={styles.card_img}>
                 <img src={cardImage} alt="cardImage" />
+                <div className={styles.card_overlay}>
+                  <div className={styles.overlay_content}>
+                    <div className={styles.avatar}></div>
+                    <h4>Елена Смирнова</h4>
+                    <p>Сайт для увековечивания памяти о героях</p>
+                  </div>
+                </div>
               </div>
               <div className={styles.card_text}>
                 <div className={styles.card_text__desc}>
@@ -81,10 +113,16 @@ export default function HomeCards() {
                 </div>
               </div>
             </div>
-            {/* */}
             <div className={styles.card}>
               <div className={styles.card_img}>
                 <img src={cardImage} alt="cardImage" />
+                <div className={styles.card_overlay}>
+                  <div className={styles.overlay_content}>
+                    <div className={styles.avatar}></div>
+                    <h4>Дмитрий Морозов</h4>
+                    <p>Сайт для увековечивания памяти о героях</p>
+                  </div>
+                </div>
               </div>
               <div className={styles.card_text}>
                 <div className={styles.card_text__desc}>
@@ -95,7 +133,6 @@ export default function HomeCards() {
                 </div>
               </div>
             </div>
-            {/* */}
           </div>
         </div>
       </div>
